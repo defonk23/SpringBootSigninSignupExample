@@ -14,7 +14,7 @@
               <div class="row">
                  <div class="col-md-3"></div>
                  <div class=col-md-6>
-                     <div class="alert alert-success" role="alert" th:if="${successMessage}" th:utext="${successMessage}">
+                     <div class="alert alert-success" role="alert" th:if="${msg}" th:utext="${msg}">
                      </div>                
                  </div>              
               </div>
@@ -30,10 +30,14 @@
                      <label for="firstname">First name</label>
                    </div>
                    <div class=col-md-6>
-                       <div class="input-group-addon" style="width: 2.6rem">
-                          <i class="fa fa-user"></i>
+                       <div class="form-group">
+                       <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="input-group-addon" style="width: 2.6rem">
+                                 <i class="fa fa-user"></i>
+                            </div>
                        </div>
-                       <input type="text" th:field="*{firstName}" class="form-control" id="firstname" placeholder="First name" required autofocus />
+                             <input type="text" th:field="*{firstname}" class="form-control" id="firstname" placeholder="First name" required autofocus />
+                       </div> 
                    </div>
               </div>
               <div class="row">
@@ -41,10 +45,14 @@
                      <label for="lastname">Last name</label>
                    </div>
                    <div class=col-md-6>
-                       <div class="input-group-addon" style="width: 2.6rem">
-                          <i class="fa fa-user"></i>
+                       <div class="form-group">
+                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="input-group-addon" style="width: 2.6rem">
+                                 <i class="fa fa-user"></i>
+                            </div>
                        </div>
-                       <input type="text" th:field="*{lastName}" class="form-control" id="lastname" placeholder="Last name" required autofocus />
+                             <input type="text" th:field="*{lastname}" class="form-control" id="lastname" placeholder="Last name" required autofocus />
+                       </div> 
                    </div>
               </div> 
               <div class="row">
